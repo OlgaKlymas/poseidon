@@ -39,58 +39,16 @@
           "id": 1,
           "title": "Анимированный баннер 240Х350",
           "img_link": "require('@/assets/images/company/240x350.png')",
-          "data": {
-            "shows": {
-              "title": "Покази",
-              "value": 45267
-            },
-            "coupons": {
-              "title": "Купони",
-              "value": 4526
-            },
-            "cpa": {
-              "title": "СРА",
-              "value": "3%"
-            }
-          }
         },
         {
           "id": 2,
           "title": "Анимированный баннер 300Х300",
           "img_link": "require('@/assets/images/company/300x300.png')",
-          "data": {
-            "shows": {
-              "title": "Покази",
-              "value": 45267
-            },
-            "coupons": {
-              "title": "Купони",
-              "value": 4526
-            },
-            "cpa": {
-              "title": "СРА",
-              "value": "3%"
-            }
-          }
         },
         {
           "id": 3,
           "title": "Анимированный баннер 728Х90",
           "img_link": "require('@/assets/images/company/728x90.png')",
-          "data": {
-            "shows": {
-              "title": "Покази",
-              "value": 45267
-            },
-            "coupons": {
-              "title": "Купони",
-              "value": 4526
-            },
-            "cpa": {
-              "title": "СРА",
-              "value": "3%"
-            }
-          }
         },
         {
           "id": 4,
