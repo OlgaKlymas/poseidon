@@ -1,61 +1,174 @@
 {
-  "companies": [
+  "list": [
     {
+      "name": "Three.js",
       "id": 1,
-      "date": {
-        "start": "",
-        "end": "",
-      },
-      "title": "",
-      "key": "",
-      "status": {
-        "title": "Виключена",
-        "value": "hide"
-      },
-      "messages_count": 4,
-      "shows": 0,
-      "coupons": 0,
-      "cpa": "0%",
-      "data": [
-        {
-          "title": "Покази",
-          "value": 0
-        },
-        {
-          "title": "Купони",
-          "value": 0
-        },
-        {
-          "title": "СРА",
-          "value": 0
-        },
-        {
-          "title": "",
-          "value": 100
-        }
-      ],
-      "carrier": [
-        {
-          "id": 1,
-          "title": "Анимированный баннер 240Х350",
-          "img_link": "require('@/assets/images/company/240x350.png')",
-        },
-        {
-          "id": 2,
-          "title": "Анимированный баннер 300Х300",
-          "img_link": "require('@/assets/images/company/300x300.png')",
-        },
-        {
-          "id": 3,
-          "title": "Анимированный баннер 728Х90",
-          "img_link": "require('@/assets/images/company/728x90.png')",
-        },
-        {
-          "id": 4,
-          "title": "Анимированный баннер 200Х200",
-          "img_link": "require('@/assets/images/company/200x200.png')"
-        }
-      ]
+      "category": "plugin"
+    },
+    {
+      "name": "Pug",
+      "id": 2,
+      "category": "templates"
+    },
+    {
+      "name": "Vue",
+      "id": 3,
+      "category": "framework"
+    },
+    {
+      "name": "Joomla!",
+      "id": 4,
+      "category": "crm"
+    },
+    {
+      "name": "Scss",
+      "id":5,
+      "category": "preprocessor"
+    },
+    {
+      "name": "Wordpress",
+      "id": 6,
+      "category": "crm"
+    },
+    {
+      "name": "HTML",
+      "id": 7,
+      "category": "lang"
+    },
+    {
+      "name": "Git",
+      "id":8,
+      "category": "control"
+    },
+    {
+      "name": "Fullpage.js",
+      "id": 9,
+      "category": "plugin"
+    },
+    {
+      "name": "Less",
+      "id": 10,
+      "category": "preprocessor"
+    },
+    {
+      "name": "Opencart",
+      "id": 11,
+      "category": "crm"
+    },
+    {
+      "name": "Css",
+      "id": 12,
+      "category": "lang"
+    },
+    {
+      "name": "phpStorm",
+      "id": 13,
+      "category": "ide"
+    },
+    {
+      "name": "Owl-carousel.js",
+      "id": 14,
+      "category": "plugin"
+    },
+    {
+      "name": "npm",
+      "id": 15,
+      "category": "taskManagers"
+    },
+    {
+      "name": "webpack",
+      "id": 16,
+      "category": "compiler"
+    },
+    {
+      "name": "JS",
+      "id": 17,
+      "category": "lang"
+    },
+    {
+      "name": "jQuery",
+      "id": 18,
+      "category": "plugin"
+    },
+    {
+      "name": "Slick.js",
+      "id": 19,
+      "category": "plugin"
+    },
+    {
+      "name": "Firebase",
+      "id": 20,
+      "category": "base"
+    },
+    {
+      "name": "Isotop.js",
+      "id": 22,
+      "category": "plugin"
+    },    
+    {
+      "name": "React",
+      "id": 23,
+      "category": "framework"
+    }
+  ],  
+  "option": {
+    "getFilterData": [
+      {"Все": "function () {return true;}"},
+      {"Основные языки": "function (el) {return el.category === `lang`}"},
+      {"Шаблонизатор": "function (el) {return el.category === `templates`}"},
+      {"Компилятор": "function (el) {return el.category === `compiler`}"},
+      {"Диспетчер задач": "function (el) {return el.category === `taskManagers`}"},
+      {"CRM": "function (el) {return el.category === `crm`}"},
+      {"Среда разработки": "function (el) {return el.category === `ide`}"},
+      {"Плагин JS": "function (el) {return el.category === `plugin`}"},
+      {"Фраймворк JS": "function (el) {return el.category === `framework`}"},
+      {"Препроцессоры CSS": "function (el) {return el.category === `preprocessor`}"},
+      {"Система контроля версий": "function (el) {return el.category === `control`}"},
+      {"База данных": "function (el) {return el.category === `base`}"}
+    ]
+  },
+  "projects": [
+    {
+      "name": "Montreal Realty Group",
+      "description": "Риэлтерское агентство элитной недвижимости",
+      "img": "img/montreal.png",
+      "link": "https://www.montrealrealty.group/",
+      "text": "В основе сайта лежит CMS система WordPress. В нее интегрирована CRM система Plektan (для риэлторов) через REST API. Для интеграции применены Vue-компоненты. Благодаря этому легко осуществляется фильтрация офисов. Также используется WP REST API, что дало возможность реализовать фильтры и страницам записей."
+    },
+    {
+      "name": "Fili",
+      "description": "Магазин автомобильных масел американских брендов",
+      "img": "img/fili.png",
+      "link": "https://fili.com.ua/",
+      "text": "Использована CMS система WordPress. Реализованы все основные элементы интернет-магазина: полноценный каталог с возможностями фильтрации, поиском; карточка товара; корзина с подключением Новой почты и системы оплаты Fondy.\nФишкой сайта является Конфигуратор по подбору масла по автомобилю. Для этого интегрирована база автомобилей через REST API. Сам конфигуратор реализован с помощью Vue-компонентов."
+    },
+    {
+      "name": "Esit Украина",
+      "description": "Официальный дистрибьютор весового оборудования",
+      "img": "img/esit.png",
+      "link": "https://esit.com.ua/",
+      "text": "Сайт является полноценным интернет-магазином и основан на CMS системе WordPress. В нем разработаны статические страницы, каталог товаров, карточка товара, корзина и оформление заказов. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Весовые решения",
+      "description": "Производитель весового оборудования",
+      "img": "img/vagovi.png",
+      "link": "https://vagovi.com.ua",
+      "text": "Сайт является интернет- каталогом товаров для клиентов. Он основан на CMS системе Opencart. Реализованы статические страницы, каталог товаров и карточка товара. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Аркодан",
+      "description": "Энергосберегающие решения для промышленных объектов",
+      "img": "img/arkodan.png",
+      "link": "https://arkodan.ua",
+      "text": "Сайт реализован по заказу консалтинговой компании Consult Marketing и основан на CMS системе Joomla!. За основу взят плагин FullPage.js. Интересно, что в проекте есть функциональная форма, написанная с помощью Ajax.js и PHP. Она принимает данные, выводит (без перезагрузки страницы) сообщение пользователю об успешной операции, обрабатывает данные и отправляет их в определенном виде на электронную почту менеджеру, например. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Expo Solution",
+      "description": "Производитель выставочного и торгового оборудования",
+      "img": "img/expo.png",
+      "link": "https://www.expo-solution.com/",
+      "text": "Это интернет-каталог с примером работ заказчика. Сделан по ТЗ дизайнера. В основе лежит CMS система WordPress. Реализованы статические страницы, страницы записей товара, а также каталог товара. Сайт адаптирован под мобильные устройства."
     }
   ]
 }
