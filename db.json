@@ -95,21 +95,7 @@
         {
           "id": 4,
           "title": "Анимированный баннер 200Х200",
-          "img_link": "require('@/assets/images/company/200x200.png')",
-          "data": {
-            "shows": {
-              "title": "Покази",
-              "value": 45267
-            },
-            "coupons": {
-              "title": "Купони",
-              "value": 4526
-            },
-            "cpa": {
-              "title": "СРА",
-              "value": "3%"
-            }
-          }
+          "img_link": "require('@/assets/images/company/200x200.png')"
         }
       ]
     }
