@@ -38,7 +38,7 @@
         {
           "id": 1,
           "title": "Анимированный баннер 240Х350",
-          "img_link": "@/src/assets/images/company/240x350.png",
+          "img_link": "@/assets/images/company/240x350.png",
           "data": {
             "shows": [{
               "title": "Покази",
