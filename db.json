@@ -38,7 +38,7 @@
         {
           "id": 1,
           "title": "Анимированный баннер 240Х350",
-          "img_link": "./assets/images/company/240x350.png",
+          "img_link": "/company/240x350.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -57,7 +57,7 @@
         {
           "id": 2,
           "title": "Анимированный баннер 300Х300",
-          "img_link": "./assets/images/company/300x300.png",
+          "img_link": "/company/300x300.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -76,7 +76,7 @@
         {
           "id": 3,
           "title": "Анимированный баннер 728Х90",
-          "img_link": "./assets/images/company/728x90.png",
+          "img_link": "/company/728x90.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -95,7 +95,7 @@
         {
           "id": 4,
           "title": "Анимированный баннер 200Х200",
-          "img_link": "./assets/images/company/200x200.png",
+          "img_link": "/company/200x200.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -151,7 +151,7 @@
         {
           "id": 1,
           "title": "Анимированный баннер 240Х350",
-          "img_link": "require('@/assets/images/company/240x350.png')",
+          "img_link": "/company/240x350.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -170,7 +170,7 @@
         {
           "id": 2,
           "title": "Анимированный баннер 300Х300",
-          "img_link": "require('@/assets/images/company/300x300.png')",
+          "img_link": "/company/300x300.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -189,7 +189,7 @@
         {
           "id": 3,
           "title": "Анимированный баннер 728Х90",
-          "img_link": "require('@/assets/images/company/728x90.png')",
+          "img_link": "/company/728x90.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -208,7 +208,7 @@
         {
           "id": 4,
           "title": "Анимированный баннер 200Х200",
-          "img_link": "require('@/assets/images/company/200x200.png')",
+          "img_link": "/company/200x200.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -264,7 +264,7 @@
         {
           "id": 1,
           "title": "Анимированный баннер 240Х350",
-          "img_link": "require('@/assets/images/company/240x350.png')",
+          "img_link": "require('/company/240x350.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -283,7 +283,7 @@
         {
           "id": 2,
           "title": "Анимированный баннер 300Х300",
-          "img_link": "require('@/assets/images/company/300x300.png')",
+          "img_link": "/company/300x300.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -302,7 +302,7 @@
         {
           "id": 3,
           "title": "Анимированный баннер 728Х90",
-          "img_link": "require('@/assets/images/company/728x90.png')",
+          "img_link": "/company/728x90.png",
           "data": {
             "shows": [{
               "title": "Покази",
@@ -321,7 +321,7 @@
         {
           "id": 4,
           "title": "Анимированный баннер 200Х200",
-          "img_link": "require('@/assets/images/company/200x200.png')",
+          "img_link": "/company/200x200.png",
           "data": {
             "shows": [{
               "title": "Покази",
