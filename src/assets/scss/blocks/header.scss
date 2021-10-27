@@ -1,0 +1,123 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  min-height: calc(60px - 8px * 2);
+  background: var(--accent-light);
+  box-shadow: 0px 2px 8px 0px #0B1A3D0A;
+  @extend %flex-row-between;
+  padding: 8px 27px 8px 12px;
+
+  .logo {
+    width: 45px;
+    height: 42px;
+    @extend %flex-row-center;
+    border-radius: 5px;
+    background: linear-gradient(248.44deg, #366FFF -51.57%, #59BCFB 149.82%);
+  }
+
+  &__left, &__right {
+    @extend %flex-row-between;
+  }
+
+  &__left {
+    width: 100%;
+    max-width: 415px;
+  }
+
+  .user {
+
+    &__message {
+      margin-right: 15px;
+
+      a {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: block;
+
+        span {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          width: 15px;
+          height: 15px;
+          @extend %flex-row-center;
+
+          background: var(--text-color);
+          border-radius: 50%;
+
+          font-size: 10px;
+          color: var(--accent-light);
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__profile {
+      position: relative;
+      @extend %flex-row-between;
+
+      img {
+        position: relative;
+        top: 0;
+        border-radius: 50%;
+        margin-right: 5px;
+        transition: .5s;
+      }
+
+      &-desc {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        min-height: 150px;
+        @include flex(column, flex-start, space-between);
+        padding-top: 15px;
+        background: var(--accent-light);
+        box-shadow: 0px 2px 8px 0px #0B1A3D0A;
+      }
+
+      &-name {
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      ul {
+        padding: 5px 15px;
+        font-size: 12px;
+
+        li a{
+          display: block;
+          padding: 3px 0;
+        }
+
+      }
+
+      .logout {
+        width: 100%;
+
+        a {
+          display: block;
+          padding: 15px;
+          border-top: var(--border);
+
+          font-size: 12px;
+          color: var(--accent-color-light);
+        }
+      }
+
+      &:hover{
+        cursor: pointer;
+        img{
+          top: -2px;
+        }
+        .arrow svg path{
+          stroke: var(--accent-color-light);
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,27 @@
+//@import "../fonts/fonts.scss";
+@import "./helpers/variables.scss";
+@import "./helpers/mixins.scss";
+@import "./helpers/reset.scss";
+
+@import "./blocks/pagination.scss";
+@import "./blocks/header.scss";
+@import "./blocks/main-layout.scss";
+@import "./blocks/search.scss";
+@import "./blocks/sidebar.scss";
+@import "./blocks/container.scss";
+@import "./blocks/add-btn.scss";
+@import "./blocks/news.scss";
+@import "./blocks/toggle-checkbox.scss";
+@import "./blocks/dashboard.scss";
+@import "./blocks/company-list";
+@import "./blocks/company.scss";
+@import "./blocks/animation.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  font-family: 'Montserrat';
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--bg);
+}

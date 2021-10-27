@@ -1,0 +1,15 @@
+.main-layout {
+  &__wrapper {
+    @include flex(row, stretch, space-between);
+    height: 100vh;
+  }
+
+  main {
+    width: calc(100% - var(--width-small));
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.news {
+  position: relative;
+
+  &__wrapper{
+    width: var(--width-small);
+    height: 100%;
+    padding: 15px 9px;
+    background-color: var(--accent-light);
+    box-shadow: 0px 2px 8px 0px #0B1A3D0A;
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+  }
+
+  &__decor {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-90%, -50%);
+  }
+  &__header {
+    @extend %flex-row-between;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__title {
+    display: none;
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--accent-color-light);
+  }
+
+  &__label {
+    background: var(--accent-color-light);
+    padding: 0 5px;
+    border-radius: 5px;
+
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--accent-light);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__show-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+
+  &__items {
+    @extend %flex-col-between;
+    gap: 10px;
+  }
+
+  .item {
+    @extend %flex-col-center;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  &--active{
+    .news__decor{
+      display: none;
+    }
+    .news__wrapper {
+
+      width: var(--width-large);
+
+      .news__title {
+        display: block;
+      }
+
+      .news__show-btn {
+        display: none;
+      }
+
+      .close-btn {
+        position: relative;
+        top: 0;
+        right: 15px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        @extend %flex-col-center;
+        cursor: pointer;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 15%;
+          width: 15px;
+          height: 2px;
+          background: linear-gradient(248.44deg, #366FFF -51.57%, #59BCFB 149.82%);
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+
+      .item {
+        opacity: 1;
+      }
+    }
+  }
+}

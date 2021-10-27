@@ -1,0 +1,101 @@
+.companies{
+  position: relative;
+}
+
+.companies > div{
+  position: absolute;
+}
+
+.company-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+
+  &__wrapper{
+    @extend %flex-col-between;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 1.5s;
+
+    &.hide{
+      opacity: 0;
+    }
+  }
+
+  .company-item {
+    padding: 24px 32px;
+    background-color: var(--accent-light);
+    box-shadow: 0px 2px 8px 0px #0B1A3D0A;
+    border-radius: 10px;
+
+    &__date, &__shows, &__coupons, &__cpa {
+      color: var(--text-grey);
+    }
+
+    &__shows, &__coupons {
+      margin-bottom: 8px;
+    }
+
+    &__shows, &__coupons, &__cpa {
+      span {
+        font-weight: 800;
+      }
+    }
+
+    &__title {
+      padding: 16px 0 22px;
+      font-weight: 800;
+    }
+
+    &__status {
+      width: fit-content;
+      padding: 5px 16px;
+      border-radius: 5px;
+      color: var(--accent-light);
+      font-size: 11px;
+      line-height: 1.45;
+
+      &--active {
+        background: linear-gradient(248.44deg, #366FFF -51.57%, #59BCFB 149.82%);
+      }
+
+      &--done {
+        background: linear-gradient(88.31deg, #FFA825 5.18%, #F2D030 116.03%);
+      }
+    }
+
+    &__messages {
+      padding: 24px 0;
+    }
+  }
+
+  .add-company {
+    position: relative;
+
+    & > div{
+      @extend %flex-row-center;
+      height: 100%;
+
+      a{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+    &__text {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 61px 35px;
+      font-size: 22px;
+      line-height: 1.2;
+      text-align: center;
+      color: var(--accent-color-light)
+    }
+  }
+}

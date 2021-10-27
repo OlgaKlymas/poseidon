@@ -1,0 +1,39 @@
+.toggle-checkbox{
+  &__label {
+    display: block;
+    width: 45px;
+    height: 25px;
+    border: 1px solid var(--text-grey);
+    border-radius: 16px;
+    background: var(--accent-light);
+    margin-bottom: 0;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    .dot {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--text-grey);
+      position: absolute;
+      left: 4px;
+      top: 2px;
+      transition: all .3s ease;
+    }
+  }
+  input[type="checkbox"]{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &:checked ~ label{
+      background: linear-gradient(248.44deg, #366FFF -51.57%, #59BCFB 149.82%);
+      .dot{
+        background: var(--accent-light);
+        left: calc(100% - 4px - 20px);
+      }
+    }
+  }
+}
+
+

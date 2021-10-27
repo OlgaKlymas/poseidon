@@ -1,0 +1,45 @@
+:root{
+  /*Colors*/
+  --bg: #E5E5E5;
+  --accent-light: #FFFFFF;
+  --accent-color: #366FFF;
+  --accent-color-light: #59BCFB;
+  --head-color: #0C1F4A;
+  --text-color: #0B1A3D;
+  --text-grey: #7E8494;
+
+  /*Border*/
+  --border: 1px solid #F2F2F2;
+
+  /*Sidebar*/
+  --width-small: 70px;
+  --width-large: 310px;
+}
+
+
+/*Extends*/
+
+%flex-row-center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+%flex-col-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+%flex-col-between{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+%flex-row-between{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

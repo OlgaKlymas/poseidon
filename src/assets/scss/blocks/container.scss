@@ -1,0 +1,14 @@
+.container {
+  @include flex(row, stretch, space-between);
+
+  width: calc(100vw - var(--width-small) - 12px);
+  padding: 60px 70px;
+  transition: 1s;
+
+  & > div:not(.news) {
+    margin-right: 38px;
+    width: 100%;
+    min-width: calc(100% - var(--width-large) - 38px);
+  }
+
+}
